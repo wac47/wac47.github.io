@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!-- HTML5 -->
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127260483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127260483-1');
+    </script>
+
+    <!-- 文字宣言 -->
+    <meta charset="UTF=8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    
+    <title>Wookieepedia Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="/jquery-3.3.1.min.js"></script>
+  
+    <script src="script.js"></script>
+    <style>
+      #quote img{
+        width:45px;
+      }
+      #quote{
+        margin-top:40px;
+        font-weight:400;
+      }
+      #appearances h3{
+        padding:12px;
+        font-size:18px;
+        font-weight:500;
+      }
+      .canonicity img{
+        max-width:375px;
+      }
+      .canonicity label{
+        width:calc(100% - 4px);
+        text-align:center;
+      }
+    </style>
+    <!--OGP用設定なし -->
+  </head>
+  <body>
+    <section id="main">
+      <div id="wkp">
+        <img src="header.png" id="header">
+        <h1><input placeholder="Mas Amedda"><span></span></h1>
+        <div id="contents">
+          <input type="file" id="imgSlctr" accept="image/*">
+          <img id="mainImg">
+          <div class="canonicity">
+            <label><input type="checkbox" checked><img src="canon.png"></label>
+            <label><input type="checkbox" checked><img src="GoToLegends.png"></label>
+            <label><input type="checkbox"><img src="legends.png"></label>
+            <label><input type="checkbox"><img src="GoToCanon.png"></label>
+          </div>
+          <div style="margin:12px;">
+            <h2><span>BIOGRAPHICAL INFORMATION</span></h2>
+            <div><h3>HOMEWORLD</h3><p class="editable"><input placeholder="Champala[1]"><span class="link"></span></p></div>
+            <div><h3>BORN</h3><p class="editable"><input value="c. [[yyBBY]],[n] Somewhere[n]"><span></span></p></div>
+            <hr>
+            <h2><span>PHYSICAL DESCRIPTION</span></h2>
+            <div><h3>SPECIES</h3><p class="editable"><input placeholder="Chagrian[2]"><span class="link"></span><p></div>
+            <div><h3>GENDER</h3><p class="editable"><input placeholder="Male[3]"><span class="link"></span></p></div>
+            <div><h3>HEIGHT</h3><p class="editable"><input placeholder="1.96 [[meters]][2]"><span></span></p></div>
+            <div><h3>EYE COLOR</h3><p class="editable"><input placeholder="[[Blue]][3]"><span></span></p></div>
+            <div><h3>SKIN COLOR</h3><p class="editable"><input placeholder="Blue[3]"><span></span></p></div>
+            <hr>
+            <h2><span>CHRONOLOGICAL AND POLITICAL INFORMATION</span></h2>
+            <h3>AFFILIATION(S)</h3>
+            <div>
+              <ul class="link">
+                <li><input placeholder="Galactic Republic[3]"><span></span><ul>
+                  <li><input placeholder="Galactic Senate[3]"><span></span></li>
+                  <li><input placeholder="Office of the Chancellor[3]"><span></span></li>
+                </ul></li>
+                <li><input placeholder="Galactic Empire[5]"><span></span><ul>
+                  <li><input placeholder="Imperial Ruling Council[6]"><span></span></li>
+                </ul></li>
+                <li><input placeholder="Coruscant provisional government[7]"><span></span></li>
+                <li><input placeholder="New Republic[8]"><span></span></li>
+              </ul>
+            </div>
+            <div><h3>MASTERS</h3><p class="editable"><input placeholder="Darth Sidious"><span></span></p></div>
+            <div><h3>APPRENTICES</h3><p class="editable"><input><span></span></p></div>
+            <p id="tmp">[Source]</p>
+            <br>
+          </div>
+        </div>
+        <div class="canonicity">
+          <label><input type="checkbox" checked><img src="canonNav.png" style="margin-left:-16px;"></label>
+          <label><input type="checkbox"><img src="legendsNav.png" style="margin-left:-16px;"></label>
+        </div>
+        <div id="quote">
+          <img src="quote.png">
+          <p style="font-style:italic;"><input placeholder="We all do our part for the Empire."><span></span></p>
+          <p><input placeholder="MAS AMEDDA"><span style="color:#00d6d6; text-transform:uppercase"></span></p>
+        </div>
+        <div id="desc">
+        <p><textarea>'''Mas Amedda''' was a [[Chagrian]] [[male]] [[politician]] who served in high-ranking government roles during the twilight [[years]] of the [[Galactic Republic]] and helped establish and administrate its successor state, the [[Galactic Empire]].</textarea><span></span></p>
+        </div>
+        <div id="appearances">
+          <h2>Appearances</h2>
+          <ul>
+            <li><input><span></span></li>
+            <li><input value="[[Star Tours: The Adventures Continue]]"><span></span></li>
+            <li><input value="[[Star Tours]] (First appearance)"><span></span></li>
+            <li><input placeholder="[[Star Wars: Galaxy's Edge]]"><span></span></li>
+          </ul>
+          <h3>Non-canon appearances</h3>
+          <ul>
+            <li><input value="[[STAR WARS(TM) Identities: The Exhibition]]"><span></span></li>
+            <li><input><span></span></li>
+            <li><input><span></span></li>
+          </ul>
+        </div>
+      </div>
+      <p id="jsBtn"><a href="javascript:beforeScreenshot();">スクショを撮る前に</a> | <a href="javascript:afterScreenshot();">編集に戻る</a>
+      <p style="width:100%; text-align:center; margin-top:30px; margin-bottom:20px;"><a href="/">HOME</a></p>
+    </section>
+  </body>
+</html>

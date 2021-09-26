@@ -1,0 +1,29 @@
+@font-face{
+  font-family:"Aurebesh";
+  src:url("Aurebesh.woff") format("woff");
+}
+@font-face{
+  font-family:"Mandalorian";
+  src:url("Mandalorian.woff") format("woff");
+}
+p,ul{
+  font-size:1.4rem;
+}
+#quebox{
+  font-size:5rem;
+  
+  height:6rem;
+  text-align:center;
+  margin:1rem auto;
+}
+form{
+  width:100%;
+  text-align:center;
+}
+input{
+  font-size:1.8rem;
+  width:5rem;
+  text-align:center;
+  border:solid #333 1px;
+}
+.ui-dialog-titlebar{display:none;}

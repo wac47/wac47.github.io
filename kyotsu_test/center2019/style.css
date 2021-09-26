@@ -1,0 +1,163 @@
+html{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-size:10px;
+}
+body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  background:url(/bg.gif) fixed;
+}
+.paper{
+  width:100%;
+  max-width:600px;
+  box-sizing:border-box;
+  background:white;
+  margin:0 auto;
+  padding:3.6rem;
+  padding-top:7.2rem;
+  /*padding-bottom:28.8rem;*/
+}
+section{
+  margin:0;
+  padding:0;
+  margin-top:2.4rem;
+  margin-left:1.2rem;
+  clear:both;
+}
+h1{
+  width:100%;
+  text-align:center;
+  font-size:2.6rem;
+}
+h1 div{
+  margin:1.2rem;
+  font-size:1.2rem;
+}
+p{
+  text-indent:1em;
+  margin:0;
+}
+h2,h3,h4,p:nth-child(2){
+  display:inline;
+  text-indent:0;
+}
+h2,h3,h4,p,li{
+  font-size:1.4rem;
+  line-height:2em;
+}
+.kaitou{
+  border:1px solid black;
+  width:3em;
+  line-height:1.6rem;
+  text-align:center;
+  display:inline-table;
+}
+.stks{
+  display:inline-block;
+  transform:scale(0.7,1.4);
+}
+ul li{
+  cursor:pointer;
+}
+ul.yoko li{
+  float:left;
+  padding-right:3em;
+}
+h1,h2,h3,h4{
+  margin-left:-1.2rem;
+  margin-right:1.2rem;
+}
+ul{
+  list-style:none;
+  padding:0;
+}
+
+.uln{
+  padding-bottom:1.5px;
+  border-bottom:solid 2px black;
+}
+#tokuten{
+  width:100%;
+  text-align:center;
+  margin:1.4rem;
+  color:white;
+  /*margin-bottom:28.8rem;*/
+  display:none;
+}
+#tokuten p{
+  text-indent:0;
+  margin:1em;
+}
+#tokuten a{
+  background:#00aced;
+  color:white;
+  text-decoration:none;
+  padding:1rem;
+  margin:0.5rem;
+  font-size:1.4rem;
+  border-radius:1rem;
+}
+.nenpyo{
+  border:solid 1px black;
+  padding:1.4rem;
+}
+.nenpyo div{
+  border:solid 1px black;
+  width:3em;
+  height:1.6rem;
+  font-size:1.4rem;
+  text-align:center;
+}
+.nenpyo p{
+  text-indent:0;
+}
+
+section > section > section{
+  page-break-inside:avoid;
+}
+div > section > section, div>section>section>section:first-of-type{
+  page-break-after:always;
+}
+@media only screen and (max-width: 767px){
+  ul li{
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+}
+
+footer{
+  width:100%;
+  text-align;center;
+}
+
+footer p{
+  width:100%;
+  text-align:center;
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+footer p a{
+  text-decoration:none;
+  color:#AFDFE4;
+}
+
+.commentary{
+  display:none;
+  background:lightgray;
+  margin-left: -7.2rem;
+  margin-right: -3.6rem;
+  padding-left: 7.2rem;
+  padding-right: 3.6rem;
+  padding-top:1.2rem;
+  padding-bottom:1.2rem;
+}
+
+.commentary p{
+  text-indent:0;
+}

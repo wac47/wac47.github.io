@@ -1,0 +1,581 @@
+<html>
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<title>HoloNet News | Dooku Spotted in Gree Enclave</title>
+<script language=javascript src="../../meta/js/detect.js"></script>
+<script language=javascript src="../../meta/js/drawCss.js"></script>
+<script language=javascript src="../../meta/js/navigation.js"></script>
+</head>
+
+<body bgcolor="#000000" topmargin="0" marginheight="0" leftmargin="0" marginwidth="0">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app19.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.holonetnews.com\/54\/news\/1352_1.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "28";
+var displayMonth = "10";
+var displayYear = "2007";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.holonetnews.com/54/news/1352_1.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20071028122831" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="../../54/news/1352_1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="28 9 2007"><strong>9</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 12:28:31 10 28, 2007">10</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20071211060902/http://holonetnews.com/54/news/1352_1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="11 12 2007"><strong>12</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="../../54/news/1352_1.html" title="7:18:46 9 28, 2007" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 12:28:31 10 28, 2007">28</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="../../54/news/1352_1.html" title="15:47:30 11 10, 2007" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="../../54/news/1352_1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="13 10 2006"><strong>2006</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 12:28:31 10 28, 2007">2007</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="../../54/news/1352_1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="16 12 2008"><strong>2008</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20071028122831*/http://www.holonetnews.com/54/news/1352_1.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>58 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">12 6 02 - 28 7 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000001010101_2003:-1:010101010101_2004:-1:001100110101_2005:-1:011100001000_2006:-1:121000021201_2007:9:011200031111_2008:-1:101001002001_2009:-1:010201100000_2010:-1:010101000000_2011:-1:000000001000_2012:-1:000000000000_2013:-1:001000100000_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<MAP NAME="holoNetHome">
+<AREA SHAPE="rect" ALT="[ HoloNet News ]" COORDS="15,4,120,41" HREF="../../54/">
+</MAP>
+<!-- Begin Header //-->
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+<tr>
+	<td align="left" valign="top"><img src="../../meta/img/title.gif" width="800" height="20"></td>
+</tr>
+<tr>
+	<td align="left" valign="top"><img src="../../meta/img/holonet_news.gif" width="800" height="50" alt="[ HoloNet News ]" useMap="#holoNetHome" border="0"></td>
+</tr>
+<tr>
+	<td align="left" valign="top"><img src="../../54/img/subscription_bar.gif" width="800" height="28"></td>
+</tr>
+</table>
+<!-- End Header //-->
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+	<td align="left" valign="top" width="115">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td align="left" valign="top"><a href="../../54/" onMouseOver="highNav('home')" onMouseOut="unhighNav('home')"><img src="../../meta/img/nav/home1.gif" border="0" name="home" alt="[ Home ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/news/"><img src="../../meta/img/nav/news2.gif" border="0" name="news" alt="[ News ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/business/" onMouseOver="highNav('business')" onMouseOut="unhighNav('business')"><img src="../../meta/img/nav/business1.gif" border="0" name="business" alt="[ Business ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/regional/" onMouseOver="highNav('regional')" onMouseOut="unhighNav('regional')"><img src="../../meta/img/nav/regional1.gif" border="0" name="regional" alt="[ Regional ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/jediwatch/" onMouseOver="highNav('jediwatch')" onMouseOut="unhighNav('jediwatch')"><img src="../../meta/img/nav/jediwatch1.gif" border="0" name="jediwatch" alt="[ Jedi Watch ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/sports/" onMouseOver="highNav('sports')" onMouseOut="unhighNav('sports')"><img src="../../meta/img/nav/sports1.gif" border="0" name="sports" alt="[ Sports ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/life/" onMouseOver="highNav('life')" onMouseOut="unhighNav('life')"><img src="../../meta/img/nav/life1.gif" border="0" name="life" alt="[ Life ]"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><a href="../../54/archives/" onMouseOver="highNav('archive')" onMouseOut="unhighNav('archive')"><img src="../../meta/img/nav/archive1.gif" border="0" name="archive" alt="[ Archive ]"></a></td>
+		</tr>
+	</table>
+	
+
+
+		<table border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr>
+			<td align="left" valign="top"><img src="../../meta/img/clear.gif" width="1" height="15"></td>
+		</tr>
+		<tr>
+
+<script language="javascript">
+<!--
+
+	var adImages = new Array();
+	var randomAdToDisplay = 0;
+
+	adImages[0]		= "../../meta/img/ads/98_1.gif";
+	adImages[1]		= "../../meta/img/ads/98_2.gif";
+	adImages[2]		= "../../meta/img/ads/98_4.gif";
+
+	randomAdToDisplay = Math.floor(Math.random()*adImages.length);
+
+	document.write('<td align="middle" valign="top"><img src="' + adImages[randomAdToDisplay] + '" width="98" height="60"></td>');
+
+// -->
+</script>
+
+
+
+		</tr>
+		<tr>
+			<td align="left" valign="top"><img src="../../meta/img/clear.gif" width="1" height="15"></td>
+		</tr>
+		<tr>
+
+<script language="javascript">
+<!--
+
+	var ad2Images = new Array();
+	var randomAdToDisplay2 = 0;
+
+	ad2Images[0]		= "../../meta/img/ads/194_1.gif";
+	ad2Images[1]		= "../../meta/img/ads/194_2.gif";
+	ad2Images[2]		= "../../meta/img/ads/194_3.gif";
+
+	randomAdToDisplay2 = Math.floor(Math.random()*ad2Images.length);
+
+	document.write('<td align="middle" valign="top"><img src="' + ad2Images[randomAdToDisplay2] + '" width="99" height="194"></td>');
+
+// -->
+</script>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><img src="../../meta/img/clear.gif" width="1" height="15"></td>
+		</tr>
+		<tr>
+<script language="javascript">
+<!--
+
+	var adImages = new Array();
+	var randomAdToDisplay = 0;
+
+	adImages[0]		= "../../meta/img/ads/98_1.gif";
+	adImages[1]		= "../../meta/img/ads/98_2.gif";
+	adImages[2]		= "../../meta/img/ads/98_4.gif";
+
+	randomAdToDisplay = Math.floor(Math.random()*adImages.length);
+
+	document.write('<td align="middle" valign="top"><img src="' + adImages[randomAdToDisplay] + '" width="98" height="60"></td>');
+
+// -->
+</script>
+
+		</tr>
+		</table>
+	</td>
+	<td align="left" valign="top" width="5"><img src="../../meta/img/clear.gif" width="5" height="1"></td>
+	<td align="left" valign="top" width="100%">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" valign="top" background="../../meta/img/content/top_back.gif" width="100%"><img src="../../meta/img/content/left_corner.gif" width="24" height="13"></td>
+	</tr>
+	</table>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" valign="top" width="19" bgcolor="#ffffff"><img src="../../meta/img/content/left.gif" width="19" height="60"></td>
+		<td align="left" valign="top" width="484" bgcolor="#ffffff">
+		
+<script language="javascript">
+<!--
+
+	var adLink = new Array();
+	var adImages = new Array();
+	var randomAdToDisplay = 0;
+
+	adImages[0]		= "../../meta/img/ads/468_1.gif";
+	adImages[1]		= "../../meta/img/ads/468_2.gif";
+	adImages[2]		= "../../meta/img/ads/468_3.gif";
+	adImages[3]		= "../../meta/img/ads/468_4.gif";
+	adImages[4]		= "../../meta/img/ads/468_5.gif";
+	adImages[5]		= "../../meta/img/ads/468_6.gif";
+	adImages[6]		= "../../meta/img/ads/468_7.gif";
+	adImages[7]		= "../../meta/img/ads/468_8.gif";
+	adImages[8]		= "../../meta/img/ads/468_9.gif";
+	adImages[9]		= "../../meta/img/ads/468_10.gif";
+	adImages[10]	= "../../meta/img/ads/468_11.gif";
+
+	randomAdToDisplay = Math.floor(Math.random()*adImages.length);
+
+	document.write('<img src="' + adImages[randomAdToDisplay] + '" border="0">');
+
+// -->
+</script>
+		<table border="0" cellpadding="0" cellspacing="0" width="468">
+		<tr>
+			<td align="left" valign="top" colspan="2"><img src="../../meta/img/clear.gif" width="1" height="12"></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top">
+			<div class="contentTitle">Dooku Spotted in Gree Enclave<br />
+			<font size="-1">Reports Place Separatist Leader in Obscure Region</font></div>
+			<div class="contentText">
+			<p />
+			<table border="0" cellpadding="0" cellspacing="0" align="left">
+				<td align="left" valign="top"><img src="../../54/news/img/story_1.jpg" width="329" height="372"><br />
+				<div class="captionText" align="center">Enhanced holographic imagery reveals Dooku at Asation.</div>
+				</td>
+			</table>
+			SATIKAN, ASATION - The Senate Bureau of Intelligence has confirmed sporadic reports that Count Dooku, popular leader of the Separatist movement, was spotted earlier in the week in a remote area of the Outer Rim known as the Gree Enclave.
+			<p />
+			"Analysis of intelligence gathered on the Gree worlds of Asation and Lonatro corroborates eyewitness accounts of Count Dooku's presence there. His intent was unknown, as is his current whereabouts," SBI Director Armand Isard told the media today during a mid-afternoon conference on Coruscant.
+			<p />
+			Reports first reached the SBI at the start of the week that a man fitting Count Dooku's description was spotted aboard the Rokak'k Baran, a mobile transport station that travels the worlds of the Enclave. A trader in the area forwarded the report to the nearest Judiciary office on Trassitan.
+			<p />
+			By the time the Judiciary dispatched a sensor probe droid, Dooku had apparently left, spending approximately four days in the area. The probe has gathered data of what is believed to be his departure, though the sensor logs are heavily distorted, possibly affected in as-yet-unknown means by Dooku.
+			<p />
+			"We were unable to get a clear image of whatever he was flying in before he jumped to lightspeed. The vessel's particle-wake is unlike any we've ever encountered, and we are currently in contact with Gree crafters to see if they may be able to shed some light on this," continued Isard.
+			<p />
+			The Director would not comment on whether the particle trail constituted evidence of a radical propulsion system or an exotic weapon.
+			<p />
+			The Gree Enclave is a private state of less-than-a-dozen worlds inhabited by the Gree, a laconic species of cephalopods said to have built a civilization that predates the Republic. The worlds of the Gree are a xenoarcheologist's treasure trove, harboring artifacts of exotic and advanced technology carefully guarded by the Gree, who have since degenerated to a point where the relics are largely unusable.
+			<p />
+			An investigation task force of Jedi are being dispatched to the distant region from the Jedi Temple on Coruscant. Jedi Masters Ashka Boda and Jabidus Inspra are leading a team of five Jedi into the Enclave to determine the purpose of Dooku's visit.
+			<p />
+			Isard would not comment on what exactly he believed Dooku was doing in the Enclave. "I am not at liberty to offer conjecture at this point," he said. Since the area has traditionally had no interests in galactic affairs, it is unlikely that the distant Enclave will become a hotbed of Separatist activity. "The Enclave is of limited political value. It is doubtful that Dooku was dispensing his rhetoric there," said Isard.
+			<p />
+			"Prior to his disappearance ten years ago, Master Dooku was known to have a passion for antiquities and exotic forms of technology," says noted Jedi Scholar Bashinan Hodizwen. "His presence there may have been something as innocuous as a shopping trip for curios."
+			<p />
+			The Jedi Council has refused comment on the story, sticking to their usual stance that Dooku is not a part of the more violent uprisings sparked by the Separatist movement. Previous statements by the Council have attributed the scattered flashpoints as the work of opportunists using Dooku's name to their own ends.
+			<p />
+			<hr>
+			<b />Special Feature: Who is Count Dooku?</b>
+			<p />
+			<table border="0" cellpadding="0" cellspacing="0" align="left">
+				<td align="left" valign="top"><img src="../../54/news/img/story_1b.jpg" width="335" height="280"></td>
+			</table>
+			Once a Jedi Master of great repute, Dooku's departure from the Jedi order made newsnet headlines across the galaxy. He is the most recent of the so-called "Lost Twenty," the only Jedi in the history of the order to voluntarily renounce their commissions.
+			<p />
+			Citing disillusionment with the Republic and the Council, Dooku left Coruscant for his homeworld of Serenno. There, he took up his title and wealth that was his birthright and disappeared for years.
+			<p />
+			His departure was a magnification of his long-standing tradition of independence, an unusual trait in the Jedi order. Dooku was a strong proponent of the living Force, a school of Jedi thought with more emphasis on action and instinct rather than the more serene and contemplative paths espoused by proponents of the unifying Force. This proactive stance dovetailed well into Dooku's new career as a political firebrand.
+			<p />
+			The former Jedi Master first reappeared on Raxus Prime, complete with fiery rhetoric lambasting the Senate and the Jedi order's complacency in the visible erosion of morals and ideals of the Republic. Since that well documented speech two years ago, Dooku has been spotted on worlds throughout the Outer Rim, fomenting secession and leading a popular movement that soon developed an alarming cohesion.
+			<p />
+			Dooku's base of operations is believed to be mobile. Reports of his speeches are scattered and often contradictory. Propaganda bearing his name has flooded the HoloNet, though many of these messages are believed to be forgeries.
+			<p />
+			Alarmist and reactionary Separatists have spilled blood in the Count's name, though the Jedi Council has steadfastly denied any connection between these violent acts and Dooku's agenda. "Dooku was a Jedi, and  a Jedi's devotion to the Force is for knowledge and defense. He would never order these attacks," Jedi Master Mace Windu was quoted saying after the violence that rocked Antar 4.
+			<p />
+			Still, why has Dooku gained such a big following? Some of the more paranoid point to his Jedi abilities to warp minds, but even without supernatural talents, he is a charismatic man with a powerful presence. In times of bureaucratic stalemating and lethargic government response to crisis issues, Dooku has appeared as a man of action in a time in inaction. He has publicly derided the Jedi allegiance to what he defines as a corrupt and ineffective government.
+			<p />
+			In an age where heroism is hard to find and so many of the galaxy's trusted institutes are treading carefully and sidestepping important confrontation, it is easy to laud someone who is making waves, regardless of the possible damage such waves may cause.
+			<p />
+			<i>Compiled by Harris Sanseon with the helpful assistance of Master Dav-Wes Renno and Madame Jocasta Nu of the Jedi Archives.</i>
+			</div>
+			</td>
+		</tr>
+		</table>
+		<script language="javascript">
+<!--
+
+function doMail()
+{
+
+	var screenWidth		=	(screen.width - 456) / 2;
+	var screenHeight	=	(screen.height - 350) / 2;
+
+	var url = "/share/PageMailer/PageMailerForm_HNN.jsp" + "?title=" + escape (document.title) + "&url=" + escape (document.location);
+
+	newwin = window.open(url,"mailer","width=456,height=350,toolbar=no,resizable=yes,scrollbars=auto,location=no,directories=no,menubar=no,top="+screenHeight+",left="+screenWidth+"");
+}
+
+function doNoMail()
+{
+
+	var screenWidth		=	(screen.width - 456) / 2;
+	var screenHeight	=	(screen.height - 450) / 2;
+
+	var url = "../../meta/no-bananas/no-bananas_transmit.html" + "?title=" + escape (document.title) + "&url=" + escape (document.location);
+
+	newwin = window.open(url,"mailer","width=456,height=450,toolbar=no,resizable=yes,scrollbars=auto,location=no,directories=no,menubar=no,top="+screenHeight+",left="+screenWidth+"");
+}
+
+//-->
+</script>
+
+
+<div align="center"><p />&nbsp;<br /><a href="javascript:doMail();"><img src="../../meta/img/trasmit_this.gif" border="0" alt="[ Transmit this... ]"></a></div><br />&nbsp;
+
+		</td>
+		<td align="left" valign="top" width="163" bgcolor="#ffffff">
+
+<script language="javascript">
+<!--
+
+	var adLink = new Array();
+	var adImages = new Array();
+	var randomAdToDisplay = 0;
+
+	adImages[0]		= "../../meta/img/ads/600_1.gif";
+	adImages[1]		= "../../meta/img/ads/600_2.gif";
+	adImages[2]		= "../../meta/img/ads/600_3.gif";
+	adImages[3]		= "../../meta/img/ads/600_4.gif";
+	adImages[4]		= "../../meta/img/ads/600_5.gif";
+	adImages[5]		= "../../meta/img/ads/600_6.gif";
+
+	randomAdToDisplay = Math.floor(Math.random()*adImages.length);
+
+	document.write('<img src="' + adImages[randomAdToDisplay] + '" border="0">');
+
+// -->
+</script>
+<br />&nbsp;</td>
+	</tr>
+	</table>
+	</td>
+</table>
+
+<MAP NAME="copyrightMap">
+<AREA SHAPE="rect" ALT="[ Credits ]" COORDS="258,12,325,27" HREF="../../credits.html?num=54">
+<AREA SHAPE="rect" ALT="[ Privacy Policy ]" COORDS="130,13,246,27" HREF="../../privacy.html?num=54">
+<AREA SHAPE="rect" ALT="[ Terms of Use ]" COORDS="0,14,117,27" HREF="../../terms_of_use.html?num=54">
+</MAP>
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+<tr>
+	<td align="center" valign="top"><br /><img src="../../meta/img/copyright.gif" border="0" useMap="#copyrightMap" alt="[ Copyright Lucasfilm Ltd. & TM. All rights reserved. ]"></center></td>
+</tr>
+</table>
+<br />
+
+<!-- START Nielsen//NetRatings Measurement V5.1 -->
+<!-- COPYRIGHT 2004 Nielsen//NetRatings Limited -->
+<script language="JavaScript" type="text/javascript">
+<!--
+var _rsCI="us-lucasarts";
+var _rsCG="holonetnews";
+var _rsDT=0;
+var _rsDU=0;
+var _rsDO=0;
+var _rsX6=0;
+var _rsSI=escape(window.location);
+var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+var _rsRP=escape(document.referrer);
+var _rsND=_rsLP+'//secure-us.imrworldwide.com/';
+if (parseInt(navigator.appVersion)>=4)
+{
+var _rsRD=(new Date()).getTime();
+var _rsSE=1;
+var _rsSV="";
+var _rsSM=1;
+_rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v51.js"><\/scr'+'ipt>';
+}
+else
+{
+_rsCL='<img src="'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+}
+document.write(_rsCL);
+//-->
+</script>
+<noscript>
+<img src="/web/20071028122831im_/http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-lucasarts&cg=holonetnews" alt="">
+</noscript>
+<!-- END Nielsen//NetRatings Measurement V5.1 -->
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 12:28:31 10 28, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:38:41 1 26, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

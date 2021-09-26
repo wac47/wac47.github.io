@@ -1,0 +1,275 @@
+html{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-size:10px;
+  overflow-x: hidden;
+}
+body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  background-color: gray;
+  background:url(/bg.gif) fixed;
+  overflow-x: hidden;
+}
+.paper{
+  width:100%;
+  max-width:600px;
+  box-sizing:border-box;
+  background:white;
+  margin:0 auto;
+  margin-bottom:10px;
+  padding:3.6rem;
+  padding-top:7.2rem;
+  overflow-x: hidden;
+  /*padding-bottom:28.8rem;*/
+}
+section{
+  margin:0;
+  padding:0;
+  margin-top:2.4rem;
+  margin-left:1.2rem;
+  clear:both;
+}
+section[id*=block]{
+  margin-top: 6rem;
+}
+h1{
+  width:100%;
+  text-align:center;
+  font-size:2.6rem;
+}
+h1 div{
+  margin:1.2rem;
+  font-size:1.2rem;
+}
+p{
+  text-indent:1em;
+  margin:0;
+}
+h2,h3,h4,h2+p,h3+p,h4+p{
+  display:inline;
+  text-indent:0;
+}
+h2,h3,h4,p,li{
+  font-size:1.4rem;
+  line-height:2em;
+}
+mark{
+  border:1px solid black;
+  width:3em;
+  line-height:1.6rem;
+  text-align:center;
+  display:inline-table;
+  background-color: white;
+  text-indent: 0;
+  margin:auto 0.5em;
+}
+a mark{
+  color:blue;
+}
+small{
+  width:100%;
+  text-align:right;
+  display:block;
+  font-size:inherit;
+}
+
+.choice{
+  display:inline-block;
+  transform:scale(0.7,1.4);
+}
+
+ol.choices{
+  padding:0;
+}
+
+.choices li{
+  list-style:none;
+  padding:0;
+}
+
+.choices li a{
+  color:inherit;
+  text-decoration: none;
+}
+
+ol.comb{
+  display:flex;
+  flex-wrap: wrap;
+}
+ol.comb li{
+  min-width:10em;
+}
+
+ul{
+  list-style:none;
+  padding-left:0;
+}
+ul.yoko li{
+  padding-right:3em;
+}
+ul.yoko{
+  display:flex;
+  list-style:none;
+}
+
+h1,h2,h3,h4{
+  margin-left:-1.2rem;
+  margin-right:1.2rem;
+}
+
+em{
+  font-style: normal;
+  white-space: nowrap;
+}
+.uln{
+  padding-bottom:1.5px;
+  border-bottom:solid 2px black;
+}
+
+a.underlineLink{
+  text-decoration: none;
+  color:inherit;
+}
+#tokuten{
+  width:100%;
+  text-align:center;
+  margin:1.4rem;
+  color:white;
+  /*margin-bottom:28.8rem;*/
+}
+#tokuten p{
+  text-indent:0;
+  margin:1em;
+}
+#tokuten .tweet a{
+  background:#00aced;
+  color:white;
+  text-decoration:none;
+  padding:1rem;
+  margin:0.5rem;
+  font-size:1.4rem;
+  border-radius:1rem;
+}
+.nenpyo{
+  border:solid 1px black;
+  padding:1.4rem;
+}
+.nenpyo div{
+  border:solid 1px black;
+  width:3em;
+  height:1.6rem;
+  font-size:1.4rem;
+  text-align:center;
+}
+.nenpyo p{
+  text-indent:0;
+}
+
+.quote{
+  border:solid 1px black;
+  padding:0.6rem;
+}
+
+.dialog p{
+  text-indent:-4em;
+  padding-left:4em;
+}
+.dialog p.comment{
+  text-indent:0;
+}
+
+section > section > section{
+  page-break-inside:avoid;
+}
+div > section > section, div>section>section>section:first-of-type{
+  page-break-after:always;
+}
+@media only screen and (max-width: 767px){
+  .choices li{
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+  .paper{
+    padding:1.2rem;
+  }
+  section{
+    margin-left:0.02%;
+  }
+}
+
+footer{
+  width:100%;
+  text-align;center;
+}
+
+footer p{
+  width:100%;
+  text-align:center;
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+footer p a{
+  text-decoration:none;
+  color:#AFDFE4;
+}
+
+.commentary{
+  display:none;
+
+  background:lightgray;
+  margin-left: -8.2rem;
+  margin-right: -4.6rem;
+  padding-left: 7.2rem;
+  padding-right: 3.6rem;
+  padding-top:1.2rem;
+  padding-bottom:1.2rem;
+}
+
+.commentary p{
+  text-indent:0;
+}
+/*
+figure img{
+  width:100%;
+  max-height:360px;
+  object-fit: contain;
+}
+*/
+figure{
+  width:100%;
+  margin:0;
+}
+figcaption{
+  width:100%;
+  text-align:left;
+  font-size:1.4rem;
+  font-weight: bold;
+}
+cite{
+  margin-right:0.2em;
+}
+.imgBox{
+  display:flex;
+}
+.imgBox figure{
+  margin-left:1rem;
+}
+.commentary figure img{
+  height:90px;
+}
+
+.tweetBtn{
+  background:#00aced;
+  color:white;
+  text-decoration:none;
+  padding:1rem;
+  margin:0.5rem;
+  font-size:1.4rem;
+  border-radius:1rem;
+}

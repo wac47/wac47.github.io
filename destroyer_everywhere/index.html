@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127260483-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127260483-1');
+    </script>
+    
+    <title>Destroyer Everywhere</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css?t=5">
+
+    <!-- import the Leaflet.js CSS and JavaScript files -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    >
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js?t=5" defer></script>
+  </head>
+  <body>
+    <div id="header">
+        <label>
+          <select name="shipType" id="shipType">
+          </select>
+        </label>
+        <label id="rotationLabel">
+          <a id="rotateRight" href="#">
+            <span class="buttonIcon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.9999 2V8M20.9999 8H14.9999M20.9999 8L18.3597 5.63067C16.9787 4.25209 15.187 3.35964 13.2546 3.08779C11.3223 2.81593 9.35389 3.17941 7.64608 4.12343C5.93827 5.06746 4.58354 6.54091 3.78602 8.32177C2.98849 10.1026 2.79138 12.0944 3.22438 13.997C3.65738 15.8996 4.69703 17.61 6.18668 18.8704C7.67634 20.1308 9.5353 20.873 11.4835 20.9851C13.4316 21.0972 15.3635 20.5732 16.9879 19.492C18.6124 18.4108 19.8414 16.831 20.4898 14.9907" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </span>          
+          </a>
+          <a id="rotateLeft" href="#">
+            <span class="buttonIcon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2V8M3 8H9M3 8L5.64033 5.63067C7.02134 4.25209 8.81301 3.35964 10.7454 3.08779C12.6777 2.81593 14.6461 3.17941 16.3539 4.12343C18.0617 5.06746 19.4165 6.54091 20.214 8.32177C21.0115 10.1026 21.2086 12.0944 20.7756 13.997C20.3426 15.8996 19.303 17.61 17.8133 18.8704C16.3237 20.1308 14.4647 20.873 12.5165 20.9851C10.5684 21.0972 8.63652 20.5732 7.01208 19.492C5.38765 18.4108 4.15862 16.831 3.51018 14.9907" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </label>
+        <label id="transparentLabel"><input type="checkbox" value="" id="transparent"></label>
+        <div style="flex-wrap:wrap; display:flex; justify-content: space-between;">
+          <div id="shipDataArea"></div>
+          <div id="shipImageCredit"></div>
+          <div><a href="#" id="openSharingDialog">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 11V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V11M12 3L12 15M12 3L16 7M12 3L8 7" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Share</span>
+          </a></div>
+          <!--<div ><a href="./" id="resetPos"></a></div>-->
+        </div>
+    </div>
+    <div id="shipWrapper">
+        <img id="ship">
+    </div>
+    <div id="map"></div>
+    <div id="dialog-wrapper" style="display:none">
+      <div id="sharing-dialog">
+        <div style="flex-wrap:wrap; display:flex; justify-content: space-between;">
+          <p class="dialog-title">Share</p>
+          <div>
+            <a href="#" class="dialog-close">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 5L5 19M5.00001 5L19 19" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="sns-icons">
+          <li><a class="twitter-share" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 -25 350 325">
+              <defs>
+                <style>
+                  .fill {fill: #55acee;}
+                </style>
+              </defs>
+              <path class="fill" d="M350.001,35.509 C346.026,42.167 340.649,49.197 333.870,56.595 C328.493,62.513 321.944,68.556 314.231,74.720 C314.231,74.720 314.231,76.940 314.231,76.940 C314.231,76.940 314.231,79.530 314.231,79.530 C314.231,80.762 314.346,81.626 314.579,82.119 C314.579,82.119 314.579,84.708 314.579,84.708 C314.579,110.109 310.022,135.572 300.903,161.097 C291.785,186.620 278.809,209.494 261.975,229.715 C243.971,251.417 222.113,268.556 196.394,281.134 C170.674,293.711 141.917,299.999 110.122,299.999 C89.546,299.999 70.142,297.041 51.904,291.122 C33.201,285.202 15.899,276.818 -0.001,265.967 C0.936,266.214 2.337,266.338 4.208,266.338 C7.948,266.831 10.755,267.077 12.626,267.077 C12.626,267.077 17.183,267.077 17.183,267.077 C33.550,267.077 49.567,264.242 65.231,258.569 C79.727,253.144 93.403,245.253 106.263,234.895 C91.300,234.649 77.387,229.469 64.531,219.357 C51.904,209.494 43.486,197.040 39.279,181.997 C42.786,182.737 45.007,183.105 45.943,183.105 C45.943,183.105 49.447,183.105 49.447,183.105 C50.151,183.352 51.202,183.476 52.605,183.476 C54.708,183.476 56.346,183.352 57.516,183.105 C59.853,183.105 63.128,182.612 67.335,181.626 C67.801,181.626 68.505,181.502 69.439,181.256 C70.376,181.009 71.075,180.887 71.542,180.887 C54.941,177.434 41.265,168.679 30.509,154.622 C19.520,140.565 14.029,124.536 14.029,106.534 C14.029,106.534 14.029,106.163 14.029,106.163 C14.029,106.163 14.029,105.794 14.029,105.794 C14.029,105.794 14.029,105.424 14.029,105.424 C18.471,108.383 23.615,110.603 29.460,112.082 C35.538,114.054 41.265,115.042 46.644,115.042 C36.354,107.644 28.640,98.642 23.497,88.038 C17.651,77.187 14.729,65.102 14.729,51.786 C14.729,44.388 15.546,37.729 17.183,31.810 C18.120,27.617 20.457,21.576 24.198,13.685 C42.435,37.358 64.177,55.854 89.429,69.172 C115.382,83.475 142.969,91.366 172.195,92.847 C171.494,87.667 171.145,84.832 171.145,84.339 C170.674,80.886 170.441,78.051 170.441,75.830 C170.441,54.868 177.456,36.989 191.483,22.193 C205.512,7.396 222.462,-0.002 242.337,-0.002 C252.623,-0.002 262.325,2.094 271.444,6.286 C280.562,10.971 288.394,16.891 294.942,24.042 C302.423,22.315 310.372,19.850 318.788,16.644 C325.803,13.931 333.051,10.232 340.532,5.547 C337.729,14.424 333.634,22.439 328.260,29.591 C322.179,36.989 315.751,42.907 308.969,47.347 C315.984,46.113 322.999,44.634 330.010,42.907 C335.388,41.428 342.052,38.961 350.001,35.509 Z"/>
+            </svg>
+          </a></li>
+          <li><a class="line-share" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 300 300">
+              <defs>
+                <style>
+                  .fill_1 {fill: #00C300;}
+                  .fill_2 {fill: #fff;}
+                </style>
+              </defs>
+              <g>
+                <path class="fill_1" d="M245.741,0L54.679,0C24.677-0.042,0.043,24.249,0,54.257v191.057 c-0.042,30.01,24.255,54.645,54.258,54.686H245.32c30.01,0.042,54.637-24.249,54.68-54.265l-0.001-191.06 C300.041,24.671,275.749,0.041,245.741,0z"/>
+                <path class="fill_2" d="M259.877,136.778c0-48.99-49.115-88.846-109.482-88.846 c-60.365,0-109.482,39.856-109.482,88.846c0,43.917,38.949,80.702,91.563,87.659c3.563,0.769,8.416,2.354,9.644,5.4 c1.104,2.766,0.724,7.1,0.354,9.896c0,0-1.279,7.727-1.562,9.375c-0.476,2.767-2.201,10.823,9.483,5.901 c11.686-4.922,63.047-37.127,86.016-63.568h-0.005C252.273,174.045,259.877,156.385,259.877,136.778z M107.537,165.925H85.785 c-3.164,0-5.74-2.575-5.74-5.744v-43.505c0-3.166,2.576-5.741,5.74-5.741c3.166,0,5.739,2.576,5.739,5.741v37.764h16.013 c3.169,0,5.741,2.576,5.741,5.742C113.277,163.35,110.706,165.925,107.537,165.925z M130.037,160.182 c0,3.168-2.575,5.744-5.737,5.744c-3.164,0-5.739-2.575-5.739-5.744v-43.505c0-3.166,2.575-5.741,5.739-5.741 c3.162,0,5.737,2.576,5.737,5.741V160.182z M182.402,160.182c0,2.479-1.573,4.667-3.924,5.446 c-0.591,0.198-1.207,0.298-1.824,0.298c-1.791,0-3.505-0.858-4.587-2.298l-22.293-30.359v26.914 c0,3.168-2.573,5.744-5.741,5.744c-3.166,0-5.742-2.575-5.742-5.744v-43.505c0-2.474,1.579-4.662,3.924-5.445 c0.591-0.199,1.206-0.296,1.823-0.296c1.791,0,3.509,0.856,4.584,2.295l22.3,30.362v-26.917c0-3.166,2.578-5.741,5.74-5.741 c3.167,0,5.739,2.576,5.739,5.741V160.182z M217.602,132.688c3.169,0,5.742,2.576,5.742,5.743c0,3.163-2.573,5.739-5.742,5.739 h-16.008v10.27h16.008c3.164,0,5.742,2.576,5.742,5.742c0,3.168-2.578,5.744-5.742,5.744h-21.754c-3.16,0-5.74-2.575-5.74-5.744 v-21.738c0-0.007,0-0.007,0-0.013v-21.755c0-3.166,2.575-5.741,5.74-5.741h21.754c3.169,0,5.742,2.576,5.742,5.741 c0,3.166-2.573,5.741-5.742,5.741h-16.008v10.271H217.602z"/>
+              </g>
+            </svg>
+          </a></li>
+        </ul>
+        <div id="sharing-url">
+          <span></span>
+          <a href="#">Copy</a>
+        </div>
+        <label><input type="checkbox" value="" id="includeCoordinate"><span>Coordinate Information</span></label>
+    </div>
+  </body>
+</html>
+

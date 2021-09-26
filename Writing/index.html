@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127260483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127260483-1');
+    </script>
+
+    <!-- 文字宣言 -->
+    <meta charset="UTF=8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+    <title>Aurebesh Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Writing/Aurek.png">
+    <link type="text/css" rel="stylesheet"
+  href="/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Writing/aurebesh.css">
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script src="/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <!--OGP用設定 -->
+    <meta property="og:title" content="Aurebesh Learning">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Aurebesh学習用webアプリ">
+    <meta property="og:url" content="http://wac47.github.io/Writing">
+    <meta property="og:site_name" content="アーカイブ">
+    <meta property="og:image" content="http://wac47.github.io/Writing/Aurek.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@wac_47">
+    <!--OGP設定終わり-->
+  </head>
+  <body>
+    <section id="main" class="aurebesh">
+      <h1><span class="lang">Aurebesh</span> Learning</h1>
+      <div id="quebox"></div>
+      <form method="get" action="" id="ansForm">
+        <input type="text" id="answer" autocomplete="off">
+      </form>
+      <ul id="writings">
+      </ul>
+      <h2>やり方</h2>
+      <p>表示されるAurebeshに対応するアルファベットを下の枠に入力して確定してください（PCならエンターキーを押す，スマホならキーボードの「確定」「開く」「検索」など）。分からないときはとりあえずなにか入力して確定すると正解が表示されます。</p>
+      <p>Aurebesh等が正常に表示されない場合は<a href="old_ver">旧バージョン</a>をお試しください。</p>
+      <p><a href="/">HOME</a></p>
+    </section>
+    <div id="complete">
+      <p><span class="lang">Aurebeh</span>を全部覚えました！</p>
+    </div>
+  </body>
+</html>

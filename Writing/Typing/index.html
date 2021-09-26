@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127260483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127260483-1');
+    </script>
+
+    <!-- 文字宣言 -->
+    <meta charset="UTF=8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+    <title>Aurebesh Typing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Writing/Aurek.png">
+    <link type="text/css" rel="stylesheet"
+  href="/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Writing/aurebesh.css">
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script src="/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="../script.js"></script>
+    <script src="typing.js?t=0"></script>
+    <style>
+      #quebox{
+        font-size:2rem;
+        height:3rem;
+      }
+      #answer{
+        width:100%;
+      }
+      #timeElapse{
+        width:100%;
+        text-align:center;
+      }
+      #typingSpeed{
+        font-style:bold;
+      }
+      #initial{
+        height:12rem;
+      }
+      #startBTN{
+        width:8rem;
+        text-align:center;
+        margin:1rem auto;
+        font-size:1.8rem;
+        font-weight:bold;
+        border:1px solid #c5c5c5
+        color:#454545;
+        background:#f6f6f6;
+        padding:0.4rem 0.8rem;
+        border-radius:0.8rem;
+      }
+      #startBTN a{
+        text-decoration:none;
+      }
+      #prepare p{
+        font-size:10rem;
+        text-align:center;
+        margin:0;
+      }
+      #prepare,#testField{
+        display:none;
+        height:12rem;
+      }
+      .ui-dialog-buttonset .ui-button:first-child{
+        background: #00aced;
+        color: white;
+        border: none;
+      }
+    </style>
+    <!--OGP用設定 -->
+    <meta property="og:title" content="Aurebesh Typing">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Aurebeshテスト用webアプリ">
+    <meta property="og:url" content="http://wac47.github.io/Writing/Typing">
+    <meta property="og:site_name" content="アーカイブ">
+    <meta property="og:image" content="http://wac47.github.io/Writing/Aurek.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@wac_47">
+    <!--OGP設定終わり-->
+  </head>
+  <body>
+    <section id="main" class="aurebesh">
+      <h1><span class="lang">Aurebesh</span> Typing</h1>
+      <div id="initial">
+        <p>表示される<span class="lang">Aurebesh</span>を小文字でテキストボックスに入力してください。</p>
+        <p id="startBTN"><a href="javascript:typingStart()">START</a></p>
+      </div>
+      <div id="prepare">
+        <p>3</p>
+      </div>
+      <div id="testField">
+        <div id="quebox"></div>
+        <form method="get" action="" id="ansForm">
+          <input type="text" id="answer" autocomplete="off">
+        </form>
+        <p id="timeElapse"></p>
+      </div>
+      <ul id="writings">
+      </ul>
+      <p>Aurebeshを覚えてない方は<a href="../">こちら</a></p>
+      <p><a href="/">HOME</a></p>
+    </section>
+    <div id="complete">
+      <p>あなたの<span class="lang">Aurebesh</span>読解速度は、<span id="typingSpeed"></span>です。</p>
+    </div>
+  </body>
+</html>

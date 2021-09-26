@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!-- HTML5 -->
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127260483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127260483-1');
+    </script>
+
+    <!-- 文字宣言 -->
+    <meta charset="UTF=8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    
+    <title>うきぺジェネレーター</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="/jquery-3.3.1.min.js"></script>
+  
+    <script src="script.js"></script>
+    <!--OGP用設定なし -->
+  </head>
+  <body>
+    <section id="main">
+      <div id="wkp">
+        <img src="header.png" id="header">
+        <h1><input placeholder="マス・アミダ"><span></span></h1>
+        <div id="contents">
+          <input type="file" id="imgSlctr" accept="image/*">
+          <img id="mainImg">
+          <div style="margin:12px;">
+            <h2><span>人物の情報</span></h2>
+            <div><h3>出身地</h3><p class="editable"><input placeholder="シャンパラ[1]"><span class="link"></span></p></div>
+            <div><h3>誕生</h3><p class="editable"><input placeholder="[[yyBBY]] 頃[n]"><span></span></p></div>
+            <hr>
+            <h2><span>身体の情報</span></h2>
+            <div><h3>種族</h3><p class="editable"><input placeholder="シャグリアン[2]"><span class="link"></span><p></div>
+            <div><h3>性別</h3><p class="editable"><input placeholder="男性[3]"><span></span></p></div>
+            <div><h3>身長</h3><p class="editable"><input placeholder="1.96メートル[2]"><span></span></p></div>
+            <div><h3>目の色</h3><p class="editable"><input placeholder="青[3]"><span></span></p></div>
+            <div><h3>肌の色</h3><p class="editable"><input placeholder="青[3]"><span></span></p></div>
+            <hr>
+            <h2><span>政治と年代の情報</span></h2>
+            <h3>所属</h3>
+            <div>
+              <ul class="link">
+                <li><input placeholder="銀河共和国[3]"><span></span><ul>
+                  <li><input placeholder="銀河元老院[3]"><span></span></li>
+                  <li><input placeholder="最高議長のオフィス[3]"><span></span></li>
+                </ul></li>
+                <li><input placeholder="銀河帝国[5]"><span></span><ul>
+                  <li><input placeholder="帝国統治評議会[6]"><span></span></li>
+                </ul></li>
+                <li><input placeholder="コルサント臨時政府[7]"><span></span></li>
+                <li><input placeholder="新共和国[8]"><span></span></li>
+              </ul>
+            </div>
+            <div><h3>師匠</h3><p class="editable"><input placeholder="ダース・シディアス"><span></span></p></div>
+            <div><h3>弟子</h3><p class="editable"><input><span></span></p></div>
+            <p id="tmp">[テンプレート]</p>
+            <br>
+          </div>
+        </div>
+        <div class="canonicity">
+          <label><input type="checkbox" checked><img src="canon_ja.png"></label>
+          <label><input type="checkbox" checked><img src="legends_ja.png"></label>
+          <label><input type="checkbox"><img src="Uprising.png"></label>
+        </div>
+        <div id="quote">
+          <p>「<input placeholder="皇帝のために全力をつくすまでだ"><span></span>」</p>
+          <p>―<input placeholder="マス・アミダ"><span></span><sup class="link">[出典]</sup></p>
+        </div>
+        <div id="desc">
+        <p><textarea>'''マス・アミダ'''（Mas Amedda）は[[惑星]]シャンパラ出身の[[シャグリアン]][[男性]]で、[[銀河共和国]]末期の政界で重要な役割を果たし、[[銀河帝国]]の創設および運営に貢献した政治家である。</textarea><span></span></p>
+        </div>
+        <div id="appearances">
+          <h2>登場エピソード</h2>
+          <ul>
+            <li><input placeholder="[[スター・ウォーズ エピソード1/ファントム・メナス]] (初登場)"><span></span></li>
+            <li><input placeholder="[[スター・ウォーズ エピソード3/シスの復讐]]"><span></span></li>
+            <li><input placeholder="[[ロスト・スターズ]] (言及のみ)"><span></span></li>
+          </ul>
+        </div>
+      </div>
+      <p id="jsBtn"><a href="javascript:beforeScreenshot();">スクショを撮る前に</a> | <a href="javascript:afterScreenshot();">編集に戻る</a>
+      <p style="width:100%; text-align:center; margin-top:30px; margin-bottom:20px;"><a href="/">HOME</a></p>
+    </section>
+  </body>
+</html>

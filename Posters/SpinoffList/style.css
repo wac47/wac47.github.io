@@ -1,0 +1,150 @@
+section#main{
+  max-width:initial;
+}
+#contents{
+  overflow-x:scroll;
+  overflow-y:visible;
+}
+table{
+  border-collapse:collapse;
+  background:white;
+  table-layout:fixed;
+  width:1030px;
+  overflow:visible;
+}
+thead,tbody,tr,figure{margin:0;padding:0;}
+thead,tbody{display:block;}
+tbody{
+  height:300px;
+  padding-bottom:50px;
+  overflow-y: scroll;
+}
+tr{
+  height:50px;
+  overflow:visible;
+}
+thead tr{
+  height:30px;
+}
+tr.ex{
+  height:175px;
+}
+tr.ex2{
+  height:350px;
+}
+th,td{
+  border:none;
+  border-bottom:1px solid #eee;
+  width:100px;
+  position:relative;
+  vertical-align:bottom;
+}
+th{
+  border-bottom:1px solid black;
+  font-weight:normal;
+
+}
+th:first-child,td:first-child{
+  width:30px;
+  text-align:right;
+}
+td div{
+  width:100px;
+  position:absolute;
+  bottom:0;
+}
+td div.extended{
+  width:300px;
+  position:absolute;
+  bottom:160px;
+  left:-100px;
+  border-radius:0 0 15px 15px/0 0 10px 10px;
+  height:15px;
+  border:1px solid gray;
+  border-top:0;
+}
+td div.extended::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-8px;
+  width:0;
+  height:0;
+  border:3px solid transparent;
+  border-top:8px solid gray;
+  border-bottom:0;
+}
+td div.earlier{
+  bottom:150px;
+}
+td div.extended div{
+  bottom:15px;
+}
+td div img:first-child{
+  width:100%;
+  position:absolute;
+  bottom:0;
+}
+td div img:nth-child(2){
+  width:50px;
+  border-radius:25px;
+  position:absolute;
+  left:-10px;
+  bottom:-10px;
+  oerflow:visible;
+  z-index:1000;
+  display:none;
+}
+
+th{
+  text-align:center;
+}
+
+.sub{
+  width:70px;
+  bottom:-10px;
+  opacity:0.9;
+  z-index:1002;
+}
+.sub:hover{
+  opacity:1;
+}
+
+td img{
+  cursor:pointer;
+  transform-origin:50% 50%;
+  transition-duration:0.3s;
+  z-index:1000;
+}
+  
+td img:hover{
+  transform:scale(1.1,1.1);
+  z-index:1001;
+}
+
+td h2{
+  display:none;
+}
+td p{
+  display:none;
+}
+#dialog{
+  display:none;
+  z-index:100000;
+  position:absolute;
+  left:calc(50% - 150px);
+  top:calc(50% - 100px);
+  background:white;
+  border-radius:10px;
+  border:1px #eee solid;
+  width:300px;
+  min-height:200px;
+  padding:10px;
+  box-shadow:5px 5px 10px rgba(0,0,0,.2);
+}
+#dialog h2,#dialog p{
+  font-size:16px;
+}
+section#main{
+  padding-bottom:10px;
+}

@@ -1,0 +1,274 @@
+
+
+div.headlineTitle	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 11px; color:#6688FF; text-decoration: none  }
+div.headlinetext	{ font-family: Arial, Helvetica; font-weight: none; font-size: 10px; color:#000000; text-decoration: none  }
+div.leadStoryText	{ font-family: Arial, Helvetica; font-weight: none; font-size: 12px; color:#ffffff }
+div.captionText 	{ font-family: Arial, Helvetica; font-weight: none; font-size: 10px; color:#6688FF }
+div.closerLookText	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 11px; color:#ffffff }
+
+div.otherHeadlineText	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 11px; color:#ffffff }
+
+div.pollText		{ font-family: Arial, Helvetica; font-weight: bold; font-size: 11px; color:#ffffff }
+div.alsoholonetText	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 11px; color:#ffffff }
+div.mainDefTitle	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 16px; color:#6688FF }
+div.weatherText		{ font-family: Arial, Helvetica; font-weight: none; font-size: 12px; color:#000000 }
+
+div.contentTitle	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 16px; color:#6688FF }
+div.contentText		{ font-family: Arial, Helvetica; font-weight: none; font-size: 13px; color:#000000 }
+
+
+li.jediWatchText	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 8px; color:#ffffff }
+
+li.alsoholonetText	{ font-family: Arial, Helvetica; font-weight: bold; font-size: 8px; color:#ffffff }
+
+li.moreHeadlinesDef	{ font-family: Arial, Helvetica; font-weight: none; font-size: 8px; color:#ffffff }
+
+li.recentHeadline	{ font-family: Arial, Helvetica; font-weight: none; font-size: 12px; color:#000000 }
+
+li.archiveHeadline	{ font-family: Arial, Helvetica; font-weight: none; font-size: 8px; color:#000000 }
+
+
+
+A.pollTextLink:link		{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				font-weight: bold;
+				}
+
+
+A.pollTextLink:visited	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				font-weight: bold;
+				}
+
+
+A.pollTextLink:active	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				font-weight: bold;
+				}	
+
+
+
+
+A.alsoholonetText:link		{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				}
+
+
+A.alsoholonetText:visited	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				}
+
+
+A.alsoholonetText:active	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				}	
+
+
+
+
+A.archiveHeadline:link		{
+				color:		#000000;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				}
+
+
+A.archiveHeadline:visited	{
+				color:		#000000;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				}
+
+
+A.archiveHeadline:active		{
+				color:		#000000;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				}	
+
+
+				
+				
+
+
+A.recentHeadline:link		{
+				color:		#000000;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				}
+
+
+A.recentHeadline:visited	{
+				color:		#000000;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				}
+
+
+A.recentHeadline:active		{
+				color:		#000000;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				}	
+				
+
+
+
+A.recentHeadlineDef:link	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				text-weight: none;
+				}
+
+
+A.recentHeadlineDef:visited	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				text-weight: none;
+				}
+
+
+A.recentHeadlineDef:active	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:underline;
+				text-weight: none;
+				}	
+
+
+				
+A.fullStoryLink:link		{
+				color:		#6688FF;
+				font-family:	Arial, Helvetica;
+				font-size:	13px;
+				text-decoration:none;
+				font-weight: none;
+				}
+
+
+A.fullStoryLink:visited	{
+				color:		#6688FF;
+				font-family:	Arial, Helvetica;
+				font-size:	13px;
+				text-decoration:none;
+				font-weight: none;
+				}
+
+
+A.fullStoryLink:active		{
+				color:		#6688FF;
+				font-family:	Arial, Helvetica;
+				font-size:	13px;
+				text-decoration:none;
+				font-weight: none;
+				}	
+				
+A.jediWatchLink:link		{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				}
+
+
+A.jediWatchLink:visited	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				}
+
+
+A.jediWatchLink:active		{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				}	
+				
+				
+				
+A.fullStoryLinkDef:link		{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	13px;
+				text-decoration:none;
+				font-weight: bold;
+				}
+
+
+A.fullStoryLinkDef:visited	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	13px;
+				text-decoration:none;
+				font-weight: bold;
+				}
+
+
+A.fullStoryLinkDef:active	{
+				color:		#ffffff;
+				font-family:	Arial, Helvetica;
+				font-size:	13px;
+				text-decoration:none;
+				font-weight: bold;
+				}	
+				
+	
+	
+	
+	
+A.headlineTitle:link		{
+				color:		#6688FF;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				font-weight: bold;
+				}
+
+
+A.headlineTitle:visited	{
+				color:		#6688FF;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				font-weight: bold;
+				}
+
+
+A.headlineTitle:active	{
+				color:		#6688FF;
+				font-family:	Arial, Helvetica;
+				font-size:	11px;
+				text-decoration:none;
+				font-weight: bold;
+				}	
