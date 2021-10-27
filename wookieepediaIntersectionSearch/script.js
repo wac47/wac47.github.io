@@ -28,13 +28,13 @@ $(()=>{
   const category2 = ($_GET.category2 || "").replace(/ /g,"_");
   const excategories = ($_GET.excategories || "").replace(/ /g,"_").split(",");
 
-  $("form").submit(()=>{
+  $("form").submit((e)=>{
+    e.preventDefault();
     if(searching){
       console.log("Working on it!");
     }else{
       search();
     }
-    return false;
   });
 
   $("#category1").val(category1);
