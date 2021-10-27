@@ -69,7 +69,7 @@ function displayResults(results){
   const excategories = $("#excategories").val().split(",");
   let searchHTML = `Intersection of <a href="https://starwars.fandom.com/wiki/Category:${category1}">Category:${category1}</a>`
     + ` and <a href="https://starwars.fandom.com/wiki/Category:${category2}">Category:${category2}</a>`;
-  if(excategories.length>0){
+  if(excategories.length>0 && excategories[0]){
     searchHTML += ` except ` + excategories.map(excategory=>`<a href="https://starwars.fandom.com/wiki/Category:${excategory}">Category:${excategory}</a> `).join(`and `)
   }
   $("#result p").html(searchHTML);
