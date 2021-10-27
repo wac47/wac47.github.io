@@ -29,11 +29,11 @@ $(()=>{
   const excategories = ($_GET.excategories || "").replace(/ /g,"_").split(",");
 
   $("form").submit((e)=>{
-    e.preventDefault();
     if(searching){
       console.log("Working on it!");
+      e.preventDefault();
     }else{
-      search();
+      //search();
     }
   });
 
