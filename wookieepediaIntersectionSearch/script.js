@@ -31,11 +31,10 @@ $(()=>{
   $("form").submit(()=>{
     if(searching){
       console.log("Working on it!");
-      return false;
     }else{
       search();
     }
-    //return false;
+    return false;
   });
 
   $("#category1").val(category1);
