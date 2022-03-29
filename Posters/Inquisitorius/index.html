@@ -111,30 +111,17 @@
       p{max-width:800px;}
     </style>
     <script>
-      var eighth_img;
-      var eighth_flag=0;
       var spoilerFlag=0;//0ならネタバレ非表示
       var spoilers;
       var fakes;
 
       var zoomFlag=0;
       $(function(){
-        eighth_img=$("#eighth_lightsaber");
-        setInterval(eighth_switch,1000);
         spoilers=$(".spoiler");
         //spoilers.css("display","none");
         fakes=$(".fakes");
         $("#contents").css("transform","zoom")
       });
-      function eighth_switch(){
-        if(eighth_flag==0){
-          eighth_img.attr("src","8th_l_a.png");
-          eighth_flag=1;
-        }else{
-          eighth_img.attr("src","8th_l_b.png");
-          eighth_flag=0;
-        }
-      }
       function spoilerSwitch(){
         if(spoilerFlag==0){
           spoilers.css("display","block");
@@ -202,7 +189,7 @@
                 <li>アニメ<cite>反乱者たち</cite></li>
               </ul>
             </td></tr>
-            <tr><td>8th Brother</td><td><img src="8th.png" style="width:80px; bottom:-10px; left:-10px;"></td><td><img src="8th_l_a.png" id="eighth_lightsaber"></td><td >Terrelian Jango Jumper</td><td>Male</td><td><span class="spoiler">3 BBY, Malachor</span></td><td>
+            <tr><td>8th Brother</td><td><img src="8th.png" style="width:80px; bottom:-10px; left:-10px;"></td><td><img src="8th_l.png" id="eighth_lightsaber"></td><td >Terrelian Jango Jumper</td><td>Male</td><td><span class="spoiler">3 BBY, Malachor</span></td><td>
               <ul>
                 <li>コミック<cite>シスの暗黒卿</cite></li>
                 <li>アニメ<cite>反乱者たち</cite></li>
