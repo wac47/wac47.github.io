@@ -14,20 +14,19 @@
 
     <!-- 文字宣言 -->
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ja">
+    <meta http-equiv="Content-Language" content="en">
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 
-    <title>尋問官一覧</title>
+    <title>List of Inquisitors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow">
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
     <link rel="stylesheet" href="/style.css">
-    <script src="/jquery-3.3.1.min.js"></script>
     <!--OGP用設定 -->
-    <meta property="og:title" content="尋問官一覧">
+    <meta property="og:title" content="List of Inquisitors">
     <meta property="og:type" content="article">
-    <meta property="og:description" content="SWスピンオフに登場する尋問官たち">
+    <meta property="og:description" content="Inquisitors from Star Wars canon">
     <meta property="og:url" content="http://wac47.github.io/Posters/Inquisitorius/">
     <meta property="og:site_name" content="アーカイブ">
     <meta property="og:image" content="http://wac47.github.io/Posters/Inquisitorius.png">
@@ -89,7 +88,11 @@
       }
       th,td{height:15px;}
       td ul{margin:0; padding:0; list-style: none;}
-      td ul li{font-size:1rem;}
+      td ul li{
+        font-size:0.6rem;
+        text-indent: -1em;
+        padding-left:1em;
+      }
       th:first-child,td:first-child{
         height:30px;
         text-align:center;
@@ -100,125 +103,35 @@
       th:nth-child(4),td:nth-child(4){height:30px;}
       th:nth-child(5),td:nth-child(5){display:none;}
       th:nth-child(6),td:nth-child(6){height:30px;}
-      th:nth-child(7),td:nth-child(7){height:60px;}
+      th:nth-child(7),td:nth-child(7){height:150px;}
       div.spoiler{
         margin:0;
         padding:0;
       }
-      .spoiler{
+      .spoiler, [lang=ja]{
         display:none;
       }
       p{max-width:800px;}
     </style>
-    <script>
-      var spoilerFlag=0;//0ならネタバレ非表示
-      var spoilers;
-      var fakes;
-
-      var zoomFlag=0;
-      $(function(){
-        spoilers=$(".spoiler");
-        //spoilers.css("display","none");
-        fakes=$(".fakes");
-        $("#contents").css("transform","zoom")
-      });
-      function spoilerSwitch(){
-        if(spoilerFlag==0){
-          spoilers.css("display","block");
-          fakes.css("display","none");
-          spoilerFlag=1;
-          $("#spoilerSwitch").html("しない")
-        }else{
-          spoilers.css("display","none");
-          fakes.css("display","block");
-          spoilerFlag=0;
-          $("#spoilerSwitch").html("する")
-        }
-      }
-    </script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <section id="main">
-      <h1>尋問官一覧</h1>
-      <p>アニメシリーズ<cite>反乱者たち</cite>で初登場し，コミック<cite>『シスの暗黒卿』</cite>(原題:<cite>Darth Vader: Dark Lord of the Sith</cite>)シリーズやゲーム<cite>フォールン・オーダー</cite>で活躍する尋問官たち(+α)の一覧（2022.03.29.更新）</p>
-      <p>横スクロール</p>
-      <p>ネタバレになる情報を表示<a href="javascript:spoilerSwitch()" id="spoilerSwitch">する</a></p>
+      <h1><span lang="en">List of Inquisitors</span><span lang="ja">尋問官一覧</span></h1>
+      <p><span lang="en">updated at 2022-05-05</span><span lang="ja">2022.05.05.更新</span></p>
+      <p>
+        <span lang="en"><a href="＃" class="spoilerSwitch fakes">Show</a><a href="＃" class="spoilerSwitch spoiler">Hide</a> spoilers</span>
+        <span lang="ja">ネタバレを<a href="＃" class="spoilerSwitch fakes">表示</a><a href="＃" class="spoilerSwitch spoiler">隠す</a></span>
+      </p>
 
       <div id="contents">
-        <table>
+        <table id="inquisitors">
           <thead>
-            <tr><th><!--NAME--></th><th><!--IMG--></th><th style="writing-mode: vertical-rl; text-align:center;">Lightsaber(s)</th><th>Species</th><th>Gender</th><th>Died</th><th>主な登場作品</th></tr>
+            <tr><th><!--NAME--></th><th><!--IMG--></th><th style="writing-mode: vertical-rl; text-align:center;">Lightsaber(s)</th><th>Species</th><th>Gender</th><th>Died</th><th style="writing-mode: vertical-rl; text-align: center;">Appearance(s)</th></tr>
           </thead>
-          <tbody>
-            <tr><td>The Grand Inquisitor</td><td><img src="1st.png" style="width:100px; bottom:-10px;"></td><td><img src="1st_l.png"></td><td>Pau'an</td><td>Male</td><td><span class="spoiler">4 BBY, Sovereign, Mustafar system</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿</cite></li>
-                <li>ドラマ<cite>オビ=ワン・ケノービ</cite></li>
-                <li>アニメ<cite>反乱者たち</cite></li>
-                <li class="spoiler">コミック<cite>Star Wars (2020)</cite></li>
-              </ul>
-            </td></tr>
-            <tr><td>2nd Sister<div class="spoiler">(Trilla Suduri)</div></td><td><img src="2nd.png" style="width:120px; top:25px; left:-10px"></td><td><img src="2nd_l.png"></td><td>Human</td><td>Female</td><td><span class="spoiler">14 BBY, Fortress Inquisitorius, Nur</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿 ベイダーの城</cite></li>
-                <li>ゲーム<cite>フォールン・オーダー</cite></li>
-              </ul>
-            </td></tr>
-            <tr><td>3rd Sister<div>Reva</div></td><td><img src="3rd.png" style="width:70px; top:20px; left:10px"></td><td></td><td>Human</td><td>Female</td><td><span class="spoiler">?</span></td><td>ドラマ<cite>オビ=ワン・ケノービ</cite></td></tr>
-            <tr class="narrow"><td>3rd Brother?</td><td>?</td><td>?</td><td>?</td><td>Male</td><td><span class="spoiler">?</span></td><td></td></tr>
-            <tr><td>4th Sister</td><td><div class="fakes"><img src="4th.png" style="width:95px; top:10px; left:5px"></div><div class="spoiler">?</div></td><td></td><td>?</td><td>Female</td><td><span class="spoiler">?</span></td><td>
-              コミック<cite>Star Wars Adventures: Return to Vader's Castle</cite><span class="spoiler">(変装。本人は未登場)</span>
-            </td></tr>
-            <tr><td>5th Brother</td><td><img src="5th.png" style="width:350px; bottom:-20px; left:-100px;"></td><td><img src="5th_l.png"></td><td>?</td><td>Male</td><td><span class="spoiler">3 BBY, Malachor</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿</cite></li>
-                <li>ドラマ<cite>オビ=ワン・ケノービ</cite></li>
-                <li>アニメ<cite>反乱者たち</cite></li>
-              </ul>
-            </td></tr>
-            <tr><td>6th Brother<div class="spoiler">(Bil Valen)</div></td><td><img src="6th.png" style="width:80px;"></td><td><img src="6th_l.png"></td><td>?</td><td>Male</td><td><span class="spoiler">18 BBY, Raada</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿</cite></li>
-                <li>小説<cite>Ahsoka</cite></li>
-                <!--<li>ドラマ<cite>マンダロリアン</cite>(浄化されたライトセーバーのクリスタルのみ)</li>-->
-              </ul>
-            </td></tr>
-            <tr><td>7th Sister</td><td><img src="7th.png" style="width:120px; bottom:-20px; left:-20px;"></td><td><img src="7th_l.png"></td><td>Mirialan</td><td>Female</td><td><span class="spoiler">3 BBY, Malachor</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿</cite></li>
-                <li>アニメ<cite>反乱者たち</cite></li>
-              </ul>
-            </td></tr>
-            <tr><td>8th Brother</td><td><img src="8th.png" style="width:80px; bottom:-10px; left:-10px;"></td><td><img src="8th_l.png" id="eighth_lightsaber"></td><td >Terrelian Jango Jumper</td><td>Male</td><td><span class="spoiler">3 BBY, Malachor</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿</cite></li>
-                <li>アニメ<cite>反乱者たち</cite></li>
-              </ul>
-            </td></tr>
-            <tr><td>9th Sister<div class="spoiler">(Masana Tide)</div></td><td><img src="9th.png" style="height:270px; max-width:initial; bottom:-10px; right:-50px; z-index:2000;"></td><td><img src="9th_l2.png"></td><td>Dowutin</td><td>Female</td><td><span class="spoiler">14 BBY, Kashyyyk?</span></td><td>
-              <ul>
-                <li>コミック<cite>シスの暗黒卿</cite></li>
-                <li>ゲーム<cite>フォールン・オーダー</cite></li>
-              </ul>
-            </td></tr>
-            <tr><td>10th Brother<div class="spoiler">(Prosset Dibs)</div></td><td><img src="10th.png" style="width:95px; bottom:22px; right:-15px;"></td><td><img src="10th_l.png"></td><td>Miraluka</td><td>Male</td><td><span class="spoiler">18 BBY, Mon Cala</span></td><td>コミック<cite>シスの暗黒卿 燃える海原</cite></td></tr>
-            <tr style="margin-left:5px;"><td>?</td><td><img src="obiInq.png" style="width:100px; top:50px; left:0px"></td><td></td><td>?</td><td>Female?</td><td><span class="spoiler">?</span></td><td>ドラマ<cite>オビ=ワン・ケノービ</cite></td></tr>
-            <tr><td>?</td><td><img src="uf.png" style="width:85px; bottom:35px; right:0;"></td><td><img src="uf_l.png"></td><td>?</td><td>Female</td><td><span class="spoiler">Coruscant</span></td><td>コミック<cite>シスの暗黒卿 ベイダーの城</cite></td></tr>
-            <tr><td>?</td><td><img src="ut.png" style="width:75px; bottom:47px;"></td><td><img src="ut_l.png"></td><td>Twi'lek</td><td>Male</td><td><span class="spoiler">Coruscant</span></td><td>コミック<cite>シスの暗黒卿 ベイダーの城</cite></td></tr>
-            <tr><td>(Jerserra's master)</td><td>?</td><td><img src="Jerserra_l.png"></td><td>?</td><td>Female</td><td><span class="spoiler">Dathomir</span></td><td>ゲームブック<cite>Ghosts of Dathomir</cite>　(言及のみ)</td></tr>
-            <tr><td><!--Unidentified Inquisitor (Anoat sector)-->?</td><td>?</td><td>?</td><td>?</td><td>?</td><td><span class="spoiler">?</span></td><td>ゲーム<cite>Star Wars: Uprising</cite>(言及のみ)</td></tr>
-            <tr style="color:gray; margin-left:5px;"><td>The Inquisitor<br>(Non-canon)</td><td><img src="T0-B1_Inquisitor.png" style="width:280px; bottom:20px; left:-130px;"></td><td></td><td>?</td><td>?</td><td><span class="spoiler">Imperial Era, T0-B1's home planet</span><td>アニメ<cite>スター・ウォーズ：ビジョンズ T0-B1</cite><small>　(ノンカノン作品)</small></td></tr>
-            <tr style="color:gray; margin-left:100px;"><td>M-OC<br>(Hunter droid)</td><td><img src="M-OC.png" style="width:180px; bottom:30px; left:-40px;"></td><td><img src="M-OC_l.png"></td><td>Hunter droid</td><td>Masculine&nbsp;programming</td><td><span class="spoiler">4 ABY, Death Star II(Non-canon)</span></td><td>
-              <ul>
-                <li>書籍<cite>Droidography</cite></li>
-                <li>LEGOアニメ<cite>フリーメーカーの冒険</cite><small>(ノンカノン作品)</small></li>
-              </ul>
-            </td></tr>
-            <tr style="color:gray;"><td>Naare<br>(Agent/Non-canon)</td><td><img src="Naare.png" style="width:150px; bottom:30px; left:-10px;"></td><td></td><td>?</td><td>Female</td><td><span class="spoiler">-</span></td><td>LEGOアニメ<cite>フリーメーカーの冒険</cite><small>(ノンカノン作品)</small></td></tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
-      <p>※タイトルが日本語の作品は邦訳済み。映像作品はすべてディズニー・プラスで視聴可能</p>
       <p><a href="/">HOME</a></p>
     </section>
   </body>
