@@ -40,7 +40,7 @@ class Episode{
 }
 
 class Inquisitor{
-    constructor({name,img,img_w,img_pos,lightsaber_img,species,died,appearances,note}){
+    constructor({name,img,img_src,img_w,img_pos,lightsaber_img,species,died,appearances,note}){
         this.name = name;
         this.img=img;
         this.img_w = img_w
@@ -50,6 +50,7 @@ class Inquisitor{
         this.died=died;
         this.appearances=appearances;
         this.note = note;
+        this.img_src = img_src;
     }
     get DOM(){
         let img_css = `width:${this.img_w}px;`;
@@ -97,6 +98,7 @@ const numbered_inquisitors = [
     new Inquisitor({
         name:{en:"The Grand Inquisitor",ja:"大尋問官"},
         img:"1st.png",
+        img_src:"https://advancedgraphics.com/grand-inquisitor-lifesize-cardboard-cutout-standee-3924/",
         img_w:100,
         img_pos:{bottom:-10},
         lightsaber_img:"1st_l.png",
@@ -143,8 +145,9 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:{en:`3rd Sister<div>Reva</div>`,ja:`3rd Sister<div>レヴァ</div>`},
+        name:{en:`3rd Sister<div>Reva</div>`,ja:`3rd Sister<div>リーヴァ</div>`},
         img:"3rd.png",
+        img_src:"https://advancedgraphics.com/reva-third-sister-lifesize-cardboard-cutout-standee-3927/",
         img_w:70,
         img_pos:{top:20,left:10},
         lightsaber_img:"",
@@ -185,6 +188,7 @@ const numbered_inquisitors = [
     new Inquisitor({
         name:`5th Brother`,
         img:"5th.png",
+        img_src:"https://advancedgraphics.com/fith-brother-lifesize-cardboard-cutout-standee-3928/",
         img_w:350,
         img_pos:{bottom:-20,left:-100},
         lightsaber_img:"5th_l.png",
