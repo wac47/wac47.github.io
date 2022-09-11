@@ -99,8 +99,8 @@ const numbered_inquisitors = [
         name:{en:"The Grand Inquisitor",ja:"大尋問官"},
         img:"1st.png",
         img_src:"https://advancedgraphics.com/grand-inquisitor-lifesize-cardboard-cutout-standee-3924/",
-        img_w:100,
-        img_pos:{bottom:-10},
+        img_w:125,
+        img_pos:{top:10,left:-25},
         lightsaber_img:"1st_l.png",
         species:{en:"Pau'an",ja:"パウアン"},
         died:{
@@ -148,9 +148,9 @@ const numbered_inquisitors = [
         name:{en:`3rd Sister<div>Reva</div>`,ja:`3rd Sister<div>リーヴァ</div>`},
         img:"3rd.png",
         img_src:"https://advancedgraphics.com/reva-third-sister-lifesize-cardboard-cutout-standee-3927/",
-        img_w:70,
+        img_w:85,
         img_pos:{top:20,left:10},
-        lightsaber_img:"",
+        lightsaber_img:"3rd_l.png",
         species:{en:"Human",ja:"人間"},
         died:"",
         appearances:[
@@ -173,9 +173,9 @@ const numbered_inquisitors = [
     new Inquisitor({
         name:`4th Sister`,
         img:"4th.png",
-        img_w:100,
-        img_pos:{top:20,left:0},
-        lightsaber_img:undefined,
+        img_w:150,
+        img_pos:{top:15,left:-50},
+        lightsaber_img:"4th_l.png",
         species:"?",
         died:undefined,
         appearances:[
@@ -189,8 +189,8 @@ const numbered_inquisitors = [
         name:`5th Brother`,
         img:"5th.png",
         img_src:"https://advancedgraphics.com/fith-brother-lifesize-cardboard-cutout-standee-3928/",
-        img_w:350,
-        img_pos:{bottom:-20,left:-100},
+        img_w:100,
+        img_pos:{top:5},
         lightsaber_img:"5th_l.png",
         species:"?",
         died:{
