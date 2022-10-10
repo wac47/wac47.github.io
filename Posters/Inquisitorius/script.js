@@ -321,7 +321,7 @@ const numbered_inquisitors = [
 ];
 const unidentified_inquisitors = [
     new Inquisitor({
-        name:`?`,
+        name:`Iskat`,
         img:"uf.png",
         img_w:85,
         img_pos:{bottom:35,right:0},
