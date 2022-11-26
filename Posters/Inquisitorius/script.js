@@ -321,6 +321,20 @@ const numbered_inquisitors = [
 ];
 const unidentified_inquisitors = [
     new Inquisitor({
+        name:`?`,
+        img:"ahsoka_inq.png",
+        img_w:120,
+        img_pos:{},
+        species:`?`,
+        died:{en:"Imperial era",ja:"帝国時代"},
+        appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Jedi",ja:"スター・ウォーズ：テイルズ・オブ・ジェダイ"}
+            }),
+        ]
+    }),
+    new Inquisitor({
         name:`Iskat`,
         img:"uf.png",
         img_w:85,
