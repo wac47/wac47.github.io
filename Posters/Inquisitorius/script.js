@@ -286,8 +286,8 @@ const numbered_inquisitors = [
         lightsaber_img:"9th_l2.png",
         species:{en:"Dowutin",ja:"ドウーティン"},
         died:{
-            en:"14 BBY, Kashyyyk?",
-            ja:"14BBY、キャッシーク？"
+            en:"9 BBY, Coruscant",
+            ja:"9BY、コルサント"
         },
         appearances:[
             new Episode({
@@ -297,6 +297,10 @@ const numbered_inquisitors = [
             new Episode({
                 type:"game",
                 title:{en:"Star Wars Jedi: Fallen Order",ja:"Star Wars ジェダイ:フォールン・オーダー"}
+            }),
+            new Episode({
+                type:"game",
+                title:{en:"Star Wars Jedi: Survivor",ja:"STAR WARS ジェダイ:サバイバー"}
             }),
         ]
     }),
