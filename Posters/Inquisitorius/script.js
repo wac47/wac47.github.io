@@ -413,6 +413,21 @@ const noncanon_inquisitors = [
                 title:{en:"Star Wars: Visions T0-B1",ja:"スター・ウォーズ:ビジョンズ T0-B1"},
             }),
         ]
+    }),new Inquisitor({
+        name:`?`,
+        note:{en:`(Non-canon)`,ja:"(ノンカノン)"},
+        img:"visions2.png",
+        img_w:160,
+        img_pos:{bottom:10,left:-40},
+        lightsaber_img:"visions2_l.png",
+        species:`?`,
+        died:{en:`Imperial Era, Golak`,ja:`帝国時代、ゴラク`},
+        appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Visions The Bandits of Golak",ja:"スター・ウォーズ:ビジョンズ ゴラクの盗賊"},
+            }),
+        ]
     }),
 ]
 const non_inquisitors = [
