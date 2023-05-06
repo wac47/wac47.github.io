@@ -280,9 +280,9 @@ const numbered_inquisitors = [
     }),
     new Inquisitor({
         name:{en:`9th Sister<div class="spoiler">(Masana Tide)</div>`,ja:`9th Sister<div class="spoiler">(マサナ・タイド)</div>`},
-        img:"9th.png",
+        img:"js_9th.png",
         img_w:200,
-        img_pos:{bottom:-10,right:-50,"z-index":2000},
+        img_pos:{bottom:-10,right:-40,"z-index":2000},
         lightsaber_img:"9th_l2.png",
         species:{en:"Dowutin",ja:"ドウーティン"},
         died:{
