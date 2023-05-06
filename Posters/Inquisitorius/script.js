@@ -420,9 +420,9 @@ const noncanon_inquisitors = [
     }),new Inquisitor({
         name:`?`,
         note:{en:`(Non-canon)`,ja:"(ノンカノン)"},
-        img:"visions2.png",
-        img_w:160,
-        img_pos:{bottom:10,left:-40},
+        img:"visions_s2_inq2.png",
+        img_w:110,
+        img_pos:{bottom:0,left:0},
         lightsaber_img:"visions2_l.png",
         species:`?`,
         died:{en:`Imperial Era, Golak`,ja:`帝国時代、ゴラク`},
