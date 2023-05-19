@@ -145,7 +145,7 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:{en:`3rd Sister<div>Reva</div>`,ja:`3rd Sister<div>リーヴァ</div>`},
+        name:{en:`3rd Sister<div>Reva Sevander</div>`,ja:`3rd Sister<div>リーヴァ・サヴェンダー</div>`},
         img:"3rd.png",
         img_src:"https://advancedgraphics.com/reva-third-sister-lifesize-cardboard-cutout-standee-3927/",
         img_w:85,
@@ -213,7 +213,7 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:`6th Brother`,
+        name:{en:`6th Brother<div class="spoiler">(Bil Valen)</div>`,ja:`6th Brother<div class="spoiler">(ビル・ヴァレン)</div>`},
         img:"6th.png",
         img_w:80,
         img_pos:{},
