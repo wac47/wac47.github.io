@@ -339,7 +339,7 @@ const unidentified_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:`Iskat`,
+        name:`Iskat Akaris`,
         img:"uf.png",
         img_w:85,
         img_pos:{bottom:35,right:0},
@@ -354,7 +354,7 @@ const unidentified_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:`?`,
+        name:`Tualon ?`,
         img:"ut.png",
         img_w:75,
         img_pos:{bottom:47},
