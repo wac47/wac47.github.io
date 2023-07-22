@@ -322,6 +322,44 @@ const numbered_inquisitors = [
             }),
         ]
     }),
+    new Inquisitor({
+        name:`<div class="spoiler">13th Sister</div><span class="spoiler">(</span>Iskat Akaris<span class="spoiler">)</span>`,
+        img:"uf.png",
+        img_w:85,
+        img_pos:{bottom:35,right:0},
+        lightsaber_img:"uf_l.png",
+        species:`<div class="fakes">?</div><div class="spoiler">Pkorian<div>`,
+        died:{en:"Coruscant, before 14 BBY",ja:"コルサント、14BBY以前"},
+        appearances:[
+            new Episode({
+                type:"novel",
+                title:`Inquisitor: Rise of the Red Blade`
+            }),
+            new Episode({
+                type:"comic",
+                title:{en:"Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader",ja:"スター・ウォーズ:シスの暗黒卿 ベイダーの城"}
+            }),
+        ]
+    }),
+    new Inquisitor({
+        name:`Tualon Yaluna`,
+        img:"ut.png",
+        img_w:75,
+        img_pos:{bottom:47},
+        lightsaber_img:"ut_l.png",
+        species:{en:"Twi'lek",ja:"トワイレック"},
+        died:{en:"Coruscant, before 14 BBY",ja:"コルサント、14BBY以前"},
+        appearances:[
+            new Episode({
+                type:"novel",
+                title:`Inquisitor: Rise of the Red Blade`
+            }),
+            new Episode({
+                type:"comic",
+                title:{en:"Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader",ja:"スター・ウォーズ:シスの暗黒卿 ベイダーの城"}
+            }),
+        ]
+    }),
 ];
 const unidentified_inquisitors = [
     new Inquisitor({
@@ -335,36 +373,6 @@ const unidentified_inquisitors = [
             new Episode({
                 type:"animated-series",
                 title:{en:"Star Wars: Tales of the Jedi",ja:"スター・ウォーズ：テイルズ・オブ・ジェダイ"}
-            }),
-        ]
-    }),
-    new Inquisitor({
-        name:`Iskat Akaris`,
-        img:"uf.png",
-        img_w:85,
-        img_pos:{bottom:35,right:0},
-        lightsaber_img:"uf_l.png",
-        species:"?",
-        died:{en:"Coruscant, before 14 BBY",ja:"コルサント、14BBY以前"},
-        appearances:[
-            new Episode({
-                type:"comic",
-                title:{en:"Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader",ja:"スター・ウォーズ:シスの暗黒卿 ベイダーの城"}
-            }),
-        ]
-    }),
-    new Inquisitor({
-        name:`Tualon ?`,
-        img:"ut.png",
-        img_w:75,
-        img_pos:{bottom:47},
-        lightsaber_img:"ut_l.png",
-        species:{en:"Twi'lek",ja:"トワイレック"},
-        died:{en:"Coruscant, before 14 BBY",ja:"コルサント、14BBY以前"},
-        appearances:[
-            new Episode({
-                type:"comic",
-                title:{en:"Star Wars: Darth Vader (2017) Vol.4 — Fortress Vader",ja:"スター・ウォーズ:シスの暗黒卿 ベイダーの城"}
             }),
         ]
     }),
