@@ -363,8 +363,9 @@ const numbered_inquisitors = [
     new Inquisitor({
         name:`Marrok`,
         img:"Marrok.png",
-        img_w:200,
+        img_w:220,
         img_pos:{bottom:0},
+        lightsaber_img:"Marrok_l.png",
         species:"?",
         appearances:[
             new Episode({
