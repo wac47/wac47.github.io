@@ -360,6 +360,19 @@ const numbered_inquisitors = [
             }),
         ]
     }),
+    new Inquisitor({
+        name:`Marrok`,
+        img:"Marrok.png",
+        img_w:200,
+        img_pos:{bottom:0},
+        species:"?",
+        appearances:[
+            new Episode({
+                type:"live-action",
+                title:{en:`Ahsoka`, ja:`アソーカ`},
+            }),
+        ]
+    }),
 ];
 const unidentified_inquisitors = [
     new Inquisitor({
