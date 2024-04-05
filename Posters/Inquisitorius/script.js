@@ -113,6 +113,10 @@ const numbered_inquisitors = [
                 title:{en:"Star Wars: Darth Vader (2017)",ja:"スター・ウォーズ:シスの暗黒卿"}
             }),
             new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
+            new Episode({
                 type:"live-action",
                 title:{en:"Star Wars: Obi-Wan Kenobi",ja:"スター・ウォーズ オビ=ワン・ケノービ"}
             }),
@@ -171,7 +175,7 @@ const numbered_inquisitors = [
         appearances:[]
     }),
     new Inquisitor({
-        name:`4th Sister`,
+        name:`4th Sister<div>Lyn</div>`,
         img:"4th.png",
         img_w:150,
         img_pos:{top:15,left:-50},
@@ -179,6 +183,10 @@ const numbered_inquisitors = [
         species:"?",
         died:undefined,
         appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
             new Episode({
                 type:"live-action",
                 title:{en:"Star Wars: Obi-Wan Kenobi",ja:"スター・ウォーズ オビ=ワン・ケノービ"}
@@ -361,6 +369,21 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
+        name:{en:`Barriss Offee`,ja:`バリス・オフィー`},
+        img:"barriss.png",
+        img_src:"https://www.youtube.com/watch?v=8SIST9t72kY",
+        img_w:60,
+        img_pos:{top:5, left:20},
+        species:{en:"Mirialan",ja:"ミリアラン"},
+        died:"",
+        appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
+        ]
+    }),
+    new Inquisitor({
         name:`Marrok`,
         img:"Marrok.png",
         img_w:220,
@@ -368,6 +391,10 @@ const numbered_inquisitors = [
         lightsaber_img:"Marrok_l.png",
         species:"?",
         appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
             new Episode({
                 type:"live-action",
                 title:{en:`Ahsoka`, ja:`アソーカ`},
@@ -384,6 +411,10 @@ const unidentified_inquisitors = [
         species:`?`,
         died:{en:"Imperial era",ja:"帝国時代"},
         appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
             new Episode({
                 type:"animated-series",
                 title:{en:"Star Wars: Tales of the Jedi",ja:"スター・ウォーズ：テイルズ・オブ・ジェダイ"}
