@@ -230,7 +230,7 @@ const numbered_inquisitors = [
             }),
             new Episode({
                 type:"novel",
-                title:{en:"Star Wars: Ahsoka"}
+                title:{en:"Star Wars: Ahsoka",ja:"アソーカ"}
             }),
         ]
     }),
