@@ -372,8 +372,8 @@ const numbered_inquisitors = [
         name:{en:`Barriss Offee`,ja:`バリス・オフィー`},
         img:"barriss.png",
         img_src:"https://www.youtube.com/watch?v=8SIST9t72kY",
-        img_w:60,
-        img_pos:{top:5, left:20},
+        img_w:130,
+        img_pos:{top:30, left:-20},
         species:{en:"Mirialan",ja:"ミリアラン"},
         died:"",
         appearances:[
