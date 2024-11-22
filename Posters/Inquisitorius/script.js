@@ -127,6 +127,25 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
+        name:`<div class="spoiler">1st Brother</div><div>Marrok</div>`,
+        img:"Marrok.png",
+        img_w:220,
+        img_pos:{bottom:0},
+        lightsaber_img:"Marrok_l.png",
+        species:"?",
+        died:{ en:"9 ABY, Seatos",ja:"9ABY、シートス"},
+        appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
+            new Episode({
+                type:"live-action",
+                title:{en:`Ahsoka`, ja:`アソーカ`},
+            }),
+        ]
+    }),
+    new Inquisitor({
         name:{en:`2nd Sister<div class="spoiler">(Trilla Suduri)</div>`,ja:`2nd Sister<div class="spoiler">(トリラ・スドゥリ)</div>`},
         img:"2nd.png",
         img_w:120,
@@ -384,26 +403,6 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:`Marrok`,
-        img:"Marrok.png",
-        img_w:220,
-        img_pos:{bottom:0},
-        lightsaber_img:"Marrok_l.png",
-        species:"?",
-        appearances:[
-            new Episode({
-                type:"animated-series",
-                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
-            }),
-            new Episode({
-                type:"live-action",
-                title:{en:`Ahsoka`, ja:`アソーカ`},
-            }),
-        ]
-    }),
-];
-const unidentified_inquisitors = [
-    new Inquisitor({
         name:`?`,
         img:"ahsoka_inq.png",
         img_w:120,
@@ -421,6 +420,8 @@ const unidentified_inquisitors = [
             }),
         ]
     }),
+];
+const unidentified_inquisitors = [
     new Inquisitor({
         name:{en:`(Jerserra's master)`,ja:`(Jerserraの師匠)`},
         img:"?",
