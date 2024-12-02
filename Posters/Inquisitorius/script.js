@@ -350,6 +350,24 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
+        name:`11th Brother`,
+        img:"ahsoka_inq.png",
+        img_w:120,
+        img_pos:{},
+        species:`?`,
+        died:{en:"Imperial era",ja:"帝国時代"},
+        appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Jedi",ja:"スター・ウォーズ：テイルズ・オブ・ジェダイ"}
+            }),
+        ]
+    }),
+    new Inquisitor({
         name:`<div class="spoiler">13th Sister</div><span class="spoiler">(</span>Iskat Akaris<span class="spoiler">)</span>`,
         img:"uf.png",
         img_w:85,
@@ -399,24 +417,6 @@ const numbered_inquisitors = [
             new Episode({
                 type:"animated-series",
                 title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
-            }),
-        ]
-    }),
-    new Inquisitor({
-        name:`?`,
-        img:"ahsoka_inq.png",
-        img_w:120,
-        img_pos:{},
-        species:`?`,
-        died:{en:"Imperial era",ja:"帝国時代"},
-        appearances:[
-            new Episode({
-                type:"animated-series",
-                title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
-            }),
-            new Episode({
-                type:"animated-series",
-                title:{en:"Star Wars: Tales of the Jedi",ja:"スター・ウォーズ：テイルズ・オブ・ジェダイ"}
             }),
         ]
     }),
