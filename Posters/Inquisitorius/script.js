@@ -127,7 +127,7 @@ const numbered_inquisitors = [
         ]
     }),
     new Inquisitor({
-        name:`<div class="spoiler">1st Brother</div><div>Marrok</div>`,
+        name:{en:`<div class="spoiler">1st Brother</div><div>Marrok</div>`,ja:`<div class="spoiler">1st Brother</div><div>マロック</div>`},
         img:"Marrok.png",
         img_w:220,
         img_pos:{bottom:0},
