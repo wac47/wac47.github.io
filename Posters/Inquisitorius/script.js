@@ -410,13 +410,28 @@ const numbered_inquisitors = [
         img:"barriss.png",
         img_src:"https://www.youtube.com/watch?v=8SIST9t72kY",
         img_w:130,
-        img_pos:{top:30, left:-20},
+        img_pos:{top:30, left:-20,"z-index":10000},
         species:{en:"Mirialan",ja:"ミリアラン"},
         died:"",
         appearances:[
             new Episode({
                 type:"animated-series",
                 title:{en:"Star Wars: Tales of the Empire",ja:"スター・ウォーズ テイルズ・オブ・エンパイア"}
+            }),
+        ]
+    }),
+    new Inquisitor({
+        name:"?",
+        img:"killed_by_ventress.png",
+        img_src:"",
+        img_w:200,
+        img_pos:{top:15, left:-90,"z-index":9999},
+        species:"?",
+        died:{en:"Imperial era",ja:"帝国時代"},
+        appearances:[
+            new Episode({
+                type:"animated-series",
+                title:{en:"Star Wars: Tales of the Underworld",ja:"スター・ウォーズ テイルズ・オブ・アンダーワールド"}
             }),
         ]
     }),
