@@ -194,12 +194,12 @@ const numbered_inquisitors = [
         appearances:[]
     }),
     new Inquisitor({
-        name:`4th Sister<div>Lyn</div>`,
+        name:`4th Sister<div>Lyn Rakish</div>`,
         img:"4th.png",
         img_w:150,
         img_pos:{top:15,left:-50},
         lightsaber_img:"4th_l.png",
-        species:"?",
+        species:"Nogratu",
         died:undefined,
         appearances:[
             new Episode({
